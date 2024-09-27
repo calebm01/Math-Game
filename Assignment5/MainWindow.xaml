@@ -1,0 +1,24 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="Assignment5.MainWindow"
+        Title="wndMathMenu" Height="393" Width="486">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/soccer-stadium-background-free-vector.jpg"/>
+        </Grid.Background>
+        <Label Content="MAIN MENU" Height="79" HorizontalAlignment="Center" Margin="0,20,0,0" x:Name="label1" VerticalAlignment="Top" FontSize="36" Width="246" FontWeight="Bold" />
+        <Button Content="Play Game" Height="45" HorizontalAlignment="Left" Margin="42,134,0,0" x:Name="cmdPlayGame" VerticalAlignment="Top" Width="122" FontSize="18" Click="cmdPlayGame_Click" />
+        <Button Content="High Scores" FontSize="18" Height="45" HorizontalAlignment="Left" Margin="321,134,0,0" x:Name="cmdHighScores" VerticalAlignment="Top" Width="122" Click="cmdHighScores_Click" />
+        <Label x:Name="NameLabel" Content="Name:" HorizontalAlignment="Left" Margin="32,196,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="NameTextbox" HorizontalAlignment="Left" Margin="133,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Height="36" FontSize="18"/>
+        <Label x:Name="AgeLabel" Content="Age:" HorizontalAlignment="Left" Margin="42,251,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="AgeTextbox" HorizontalAlignment="Left" Margin="133,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" Height="39" FontSize="24"/>
+        <Label x:Name="GameTypeLabel" Content="Game Type:" HorizontalAlignment="Left" Margin="14,313,0,0" VerticalAlignment="Top" Width="115" FontSize="18"/>
+        <RadioButton x:Name="AddRadioButton" Content="Adding" HorizontalAlignment="Left" Margin="134,325,0,0" VerticalAlignment="Top" Height="22" Width="96" ClickMode="Press" IsChecked="True" GroupName="GameType" Panel.ZIndex="3"/>
+        <RadioButton x:Name="SubtractRadioButton" Content="Subtracting" HorizontalAlignment="Left" Margin="229,324,0,0" VerticalAlignment="Top" Height="22" Width="96" ClickMode="Press" IsChecked="False" GroupName="GameType" Panel.ZIndex="3"/>
+        <RadioButton x:Name="MultRadioButton" Content="Multiplying" HorizontalAlignment="Left" Margin="133,347,0,0" VerticalAlignment="Top" Height="22" Width="96" ClickMode="Press" IsChecked="False" GroupName="GameType" Panel.ZIndex="3"/>
+        <RadioButton x:Name="DivideRadioButton" Content="Dividing" HorizontalAlignment="Left" Margin="229,347,0,0" VerticalAlignment="Top" Height="22" Width="96" ClickMode="Press" IsChecked="False" GroupName="GameType" Panel.ZIndex="3"/>
+        <Label x:Name="ErrorLabel" Content="" HorizontalAlignment="Center" Margin="0,77,0,0" VerticalAlignment="Top" Width="462" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Foreground="#FFEF0505" BorderBrush="Black" FontWeight="Bold"/>
+    </Grid>
+</Window>

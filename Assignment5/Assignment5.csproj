@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\1000_F_172339319_oHxmtHxbZwJUFpXjfdI6PGiG9xDW7Itm.jpg" />
+    <None Remove="Images\5e37603162b16adb30db7ffb72a51d79.jpg" />
+    <None Remove="Images\soccer-stadium-background-free-vector.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\1000_F_172339319_oHxmtHxbZwJUFpXjfdI6PGiG9xDW7Itm.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\5e37603162b16adb30db7ffb72a51d79.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\soccer-stadium-background-free-vector.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
